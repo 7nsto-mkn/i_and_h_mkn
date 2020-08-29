@@ -1,0 +1,117 @@
+@charset "utf-8";
+header h1 {
+  background-image: url(../img/logo_small.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100%;
+  width: 100%;
+  margin: 0 auto;
+  padding: calc(64.5 / 345 * 100%) 0 0;
+}
+
+.sub-page_ttl {
+  padding-top: 2em;
+}
+
+.section.section {
+  padding-bottom: 2em;
+}
+
+.area_icon {
+  font-size: 0;
+}
+
+.area_icon img {
+  width: calc(100% / 3);
+}
+
+ .return {
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.return a {
+  background-image:url(../img/return.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.pc {
+  display: none;
+}
+
+/* pc */
+@media screen and (min-width: 560px) {
+  header h1 {
+    background-image: url(../img/logo_small_pc.png);
+  }
+
+  .pc {
+    display: block!important;
+  }
+
+  .sp {
+    display: none;
+  }
+
+  .sub-page_ttl {
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    margin: 4em auto 2em;
+    padding: 0;
+    text-align: center;
+  }
+
+  .sub-page_ttl.all {
+    background: linear-gradient(90deg, #d8c6c6, #d3c6ca);
+  }
+
+  .sub-page_ttl.fk { background-color: #ac88d1; }
+  .sub-page_ttl.sk { background-color: #e981b4; }
+  .sub-page_ttl.nb { background-color: #5888e9; }
+  .sub-page_ttl.dt { background-color: #e95864; }
+  .sub-page_ttl.iw { background-color: #ffe45e; }
+  .sub-page_ttl.ab { background-color: #64d188; }
+  .sub-page_ttl.kj { background-color: #ffa273; }
+  .sub-page_ttl.mg { background-color: #4c4c4c; }
+  .sub-page_ttl.ru { background-color: #ccc; }
+
+  .sub-page_ttl img {
+    margin: 0 auto;
+  }
+
+  .head_bg {
+    margin-bottom: 4em;
+  }
+
+  .area_icon,.area_header {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .area_header img {
+    max-width: 1024px;
+    width: 100%;
+  }
+
+  .return {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    position: static;
+    text-align: left;
+  }
+
+  .return a {
+    width: 3rem;
+  }
+}

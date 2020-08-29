@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Free Icon & Header (made by mikan)</title>
+  <link rel="stylesheet" type="text/css" href="../css/destyle.css">
+  <link rel="stylesheet" type="text/css" href="../css/base.css">
+  <link rel="stylesheet" type="text/css" href="../css/subpage.css">
+  <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+  <header id="logo">
+    <a href="../"><h1></h1></a>
+  </header>
+  <div class="wrapper">
+    <div class="sub-page_ttl mg"><img src="../img/ttl_mg.png"></div>
+    <p>以下より保存してお使いください。</p>
+    <div class="section">
+      <div class="head_bg"><h2>アイコン</h2></div>
+      <div class="area_icon">
+        <img src="../img/icon/mg/ic_mg_sf01.png">
+        <img src="../img/icon/mg/ic_mg_sf01b.png">
+        <img src="../img/icon/mg/ic_mg_sf01w.png">
+        <img src="../img/icon/mg/ic_mg_sf02.png">
+        <img src="../img/icon/mg/ic_mg_sf02b.png">
+        <img src="../img/icon/mg/ic_mg_sf02w.png">
+        <img src="../img/icon/mg/ic_mg_sf03.png">
+        <img src="../img/icon/mg/ic_mg_sf03b.png">
+        <img src="../img/icon/mg/ic_mg_sf03w.png">
+        <img src="../img/icon/mg/ic_mg_sf04.png">
+        <img src="../img/icon/mg/ic_mg_sf04b.png">
+        <img src="../img/icon/mg/ic_mg_sf04w.png">
+        <img src="../img/icon/mg/ic_mg_sm01.png">
+        <img src="../img/icon/mg/ic_mg_sm01b.png">
+        <img src="../img/icon/mg/ic_mg_sm01w.png">
+        <img src="../img/icon/mg/ic_mg_sm02.png">
+      </div>
+    </div>
+  
+   <div class="section">
+      <div class="head_bg"><h2>ヘッダー</h2></div>
+      <div class="area_header">
+        <img src="../img/header/mg/hd_mg_sf01.png">
+        <img src="../img/header/mg/hd_mg_sf01b.png">
+        <img src="../img/header/mg/hd_mg_sf01w.png">
+        <img src="../img/header/mg/hd_mg_sf02.png">
+        <img src="../img/header/mg/hd_mg_sf02b.png">
+        <img src="../img/header/mg/hd_mg_sf02w.png">
+        <img src="../img/header/mg/hd_mg_sf03.png">
+        <img src="../img/header/mg/hd_mg_sf03b.png">
+        <img src="../img/header/mg/hd_mg_sf03w.png">
+        <img src="../img/header/mg/hd_mg_sf04.png">
+        <img src="../img/header/mg/hd_mg_sf04b.png">
+        <img src="../img/header/mg/hd_mg_sf04w.png">
+        <img src="../img/header/mg/hd_mg_sm01.png">
+      </div>
+   </div>
+
+   <div class="block_page-bottom">
+    <div class="return"><a href="../index.html#sozai"></a></div>
+    <div class="pagetop"><a href="#logo"></a></div>
+  </div>
+</div>
+
+<!-- js -->
+<!-- smooth-scroll -->
+<script type="text/javascript" src="../js/smooth-scroll.js"></script>
+<script>
+var scroll = new SmoothScroll();
+var options = {};
+var smoothScrollWithoutHash = function (selector, settings) {
+    var clickHandler = function (event) {
+        var toggle = event.target.closest( selector );
+        if ( !toggle || toggle.tagName.toLowerCase() !== 'a' ) return;
+        var anchor = document.querySelector( toggle.hash );
+        if ( !anchor ) return;
+        event.preventDefault();
+        scroll.animateScroll( anchor, toggle, options || {} );
+    };
+    window.addEventListener('click', clickHandler, false );
+};
+smoothScrollWithoutHash( 'a[href*="#"]' );
+</script>
+</body>
+</html>
