@@ -19,6 +19,16 @@ header h1 {
 
 .area_icon {
   font-size: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.area_icon .new {
+  width: calc(100% / 3);
+}
+
+.area_icon .new img {
+  width: 100%;
 }
 
 .area_icon img {

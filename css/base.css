@@ -94,6 +94,20 @@ img {
   padding-top: 3em;
 }
 
+.new{ position: relative; }
+.new::after {
+  content: '';
+  width: 3rem;
+  height: 3rem;
+  background-image: url(../img/new.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  top: .5rem;
+  opacity: .9;
+}
+
 button {
   background-color: #f29dba;
   color: #fff;
