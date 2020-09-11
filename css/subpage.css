@@ -24,7 +24,7 @@ header h1 {
 }
 
 .area_icon img,
-.new {
+.area_icon .new {
   width: calc(100% / 3);
 }
 
