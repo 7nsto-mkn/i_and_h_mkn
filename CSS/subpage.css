@@ -24,16 +24,13 @@ header h1 {
   align-items: flex-start;
 }
 
+.area_icon img,
 .area_icon .new {
   width: calc(100% / 3);
 }
 
 .area_icon .new img {
   width: 100%;
-}
-
-.area_icon img {
-  width: calc(100% / 3);
 }
 
  .return {
