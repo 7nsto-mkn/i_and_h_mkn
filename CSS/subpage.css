@@ -21,7 +21,7 @@ header h1 {
   font-size: 0;
   display: flex;
   flex-wrap: wrap;
-  align-items； flex-start;
+  align-items: flex-start;
 }
 
 .area_icon .new {
