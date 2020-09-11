@@ -21,13 +21,12 @@ header h1 {
   font-size: 0;
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-start;
 }
 
 .area_icon img,
 .area_icon .new {
   width: calc(100% / 3);
-  height: auto;
+  align-self: flex-start;
 }
 
 .area_icon .new img {
