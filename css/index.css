@@ -130,14 +130,24 @@ header h1 {
   width: 100%;
 }
 
-.webclap_reply {
+.webclap_reply,
+.question {
   text-align: center;
-  padding-top: 1em;
   display: block;
 }
 
-.webclap_reply i {
+.webclap_reply i,
+.question i {
   padding-right: .5em;
+}
+.webclap_reply {
+  padding: 1em 0 2em;
+}
+
+.question {
+  padding: 1em 0 0;
+  border-top: 2px solid #f29dba;
+  border-bottom: 2px solid #f29dba;
 }
 
 /* pc */
