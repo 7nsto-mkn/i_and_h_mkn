@@ -24,6 +24,7 @@ header h1 {
 .ex img {
   width: 50%;
   height: 50%;
+  align-self: center;
 }
 
 .detail.ok { border-color: #457ae6; } 
