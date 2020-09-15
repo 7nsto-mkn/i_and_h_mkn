@@ -19,7 +19,7 @@ body {
 }
 
 header,h1 {
-  width: 100%;
+  width: calc(100% - 2em);
   padding: 1em;
 }
 
