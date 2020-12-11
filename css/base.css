@@ -172,6 +172,13 @@ footer {
 
 /* pc */
 @media screen and (min-width: 560px) {
+  html,
+  body {
+  overflow-x: hidden!important;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  }
+
   header,h1 {
     max-width: 1024px;
     width: 100%;
