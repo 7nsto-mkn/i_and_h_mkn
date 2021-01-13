@@ -106,8 +106,22 @@ header h1 {
     margin: 0 auto;
   }
 
+  .area_icon img,
+  .area_icon .new {
+  width: calc(100% / 4);
+  }
+
+  .area_header {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .area_header .new,
   .area_header img {
-    max-width: 1024px;
+    width: calc(100% / 2);
+  }
+
+  .area_header .new img {
     width: 100%;
   }
 
