@@ -9,6 +9,20 @@ header h1 {
   padding: calc(312 / 635 * 100%) 0 0;
 }
 
+.h3-about {
+  width: calc(100% - 1.5em);
+  margin: .5em auto 0;
+  padding: .5em 0 .25em;
+  font-size: 1.25em;
+
+  border-bottom: #f2f279 4px solid;
+}
+
+.h3-about i {
+  padding-right: .25em;
+  color: #f2f279;
+}
+
 .detail {
   position: relative;
   border: solid 2px;
@@ -19,6 +33,10 @@ header h1 {
   background-color: #e6e6e6;
   display: flex;
   margin-bottom: 1.5em;
+}
+
+.group_ex.ng .ex {
+  margin-bottom: 0;
 }
 
 .ex img {
@@ -41,7 +59,6 @@ header h1 {
   padding: 0 1em;
   line-height: 1;
   background: #fff;
-  font-weight: bold;
 }
 
 .h4-ok,.h4-ng {
@@ -61,11 +78,11 @@ header h1 {
 
 
 .list li {
-  line-height: 1.5em;
+  padding: .1em 0;
 }
 
 .list.link {
-  padding-top: 0;
+  padding-top: .5em;
 }
 
 .list.attention::before {
@@ -108,11 +125,16 @@ header h1 {
 
 .ex_ttl {
   text-align: center;
-  font-weight: 600;
+  padding: 1.25em 1em .5em;
+}
+
+.ex ul {
+  padding: .75em
 }
 
 .ex li {
-  font-size: .75em;
+  font-size: .8em;
+  line-height: 1.15em;;
 }
 
 .area_thumb {
@@ -126,29 +148,47 @@ header h1 {
   width: 50vw;
 }
 
+.area_thumb a:hover {
+  opacity: .75;
+}
+
 .area_thumb a img {
   width: 100%;
 }
 
-.webclap_reply,
-.question {
-  text-align: center;
-  display: block;
+.contact-btn {
+  width: calc(100% - .5em);
+  margin: 0 auto;
+  display: flex;
 }
 
-.webclap_reply i,
-.question i {
-  padding-right: .5em;
-}
-.webclap_reply {
-  padding: 1em 0 2em;
+.contact-btn button.btn {
+  width: calc((100% / 3) - .5em);
+  margin: 1em .25em 0;
 }
 
 .question {
   padding: 1em 0 0;
   border-top: 2px solid #f29dba;
   border-bottom: 2px solid #f29dba;
+  display: block;
 }
+
+.question i {
+  padding-right: .5em;
+}
+
+.twitter_btn {
+  background-color: #f29dba;
+  margin: 1em 0;
+  padding: .5em 0;
+  text-align: center;
+}
+
+footer p {
+  padding: 1em;;
+}
+
 
 /* pc */
 @media screen and (min-width: 560px) {
@@ -163,6 +203,11 @@ header h1 {
   margin: 0 auto;
   }
 
+  .h3-about {
+    max-width: 960px;
+    width: calc(100% - 2em);
+  }
+
   .area_half .detail {
     width: calc(50% - 1em);
   }
@@ -170,6 +215,10 @@ header h1 {
   .h3-ok, .h3-ng {
     left: calc(50% - 1.5em);
     padding: 0 1em;
+  }
+
+  .def-ok,.def-ng {
+    padding: 1em 0;
   }
 
   .group_ex {
@@ -185,6 +234,7 @@ header h1 {
   .area_thumb a {
     width: 50%;
     text-align: center;
+    background-position-x: center;
   }
 
   .area_thumb a:first-of-type {
@@ -207,5 +257,14 @@ header h1 {
 
   .area_thumb a img {
     width: auto;
+  }
+  .contact-btn {
+    max-width: 960px;
+    width: calc(100% - 2em);
+  }
+  
+  .contact-btn button.btn {
+    width: calc((100% / 3) - 1.5em);
+    margin: 1em auto 0;
   }
 }
