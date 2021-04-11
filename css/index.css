@@ -30,7 +30,7 @@ header h1 {
 
 h4.faq {
   width: calc(100% - 2em);
-  margin: 1em auto 0;
+  margin: 1.5em auto 0;
   padding: .5em 0;
   border-top: 2px #f29dba solid;
   border-bottom: 2px #f29dba solid;
