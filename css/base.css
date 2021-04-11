@@ -110,7 +110,11 @@ summary {
   cursor: pointer;
   list-style: none;
   position: relative;
-  list-style: none;
+  display: block;
+}
+
+summary::-webkit-details-marker {
+  display: none;
 }
 
 summary::after {
