@@ -110,6 +110,7 @@ summary {
   cursor: pointer;
   list-style: none;
   position: relative;
+  list-style: none;
 }
 
 summary::after {
