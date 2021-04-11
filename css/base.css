@@ -72,21 +72,71 @@ h4 {
   font-size: 1.25em;
 }
 
-p,ul {
+p,ul,details {
   padding: 1em 1em 0;
   transform:rotate(0.1deg);
 }
 
 a {
   color: #f29dba;
+  outline: none;
 }
+
 a:hover,a:active {
   color: #e58a8a;
+}
+
+a.anchor{
+  display: block;
+  padding-top: 2em;
+  margin-top: -2em;
 }
 
 img {
   max-width: 100%;
 }
+
+details {
+  background-color: #f2f279;
+  margin: 1em 1em 0;
+  padding: 0;
+  border-radius: 10px;
+}
+
+summary {
+  width: 90%;
+  padding: 1em 0 1em 1em;
+  outline: none;
+  cursor: pointer;
+  list-style: none;
+  position: relative;
+}
+
+summary::after {
+  content: "\f067";
+  font-family: FontAwesome;
+  font-size: 1.25em;
+  color: #f29dba;
+  width: 10%;
+  position: absolute;
+  top: 50%;
+  right: -10%;
+  transform: translateY(-50%);
+  transition: transform 0.5s;
+  text-align: center;
+}
+
+details[open] summary::after {
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.summary_open {
+  background-color: #fff;
+  border: 2px #f2f279 solid;
+  border-radius: 0 0 10px 10px;
+  padding: 1em;
+}
+
 
 .detail {
   width: calc(100% - 2em);
@@ -164,6 +214,14 @@ footer {
   width: 100%;
 }
 
+footer a {
+  color: #e68a8a;
+}
+
+footer a:hover {
+  color: #f29dba
+}
+
 /* pc */
 @media screen and (min-width: 560px) {
   header,h1 {
@@ -173,7 +231,7 @@ footer {
     padding: 2em;
   }
 
-  p,ul {
+  p,ul,details {
     max-width: 960px;
     width: calc(100% - 2em);
     padding: 1em;
@@ -211,6 +269,11 @@ footer {
 
   button:hover .btn_text,
   button:active .btn_text{
-    padding: calc(1em - 2px) 0;
+    padding: calc(1em - 4px) 0;
+  }
+
+  details {
+    margin: 1em auto 0;
+    padding: 0;
   }
 }

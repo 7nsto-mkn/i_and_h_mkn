@@ -23,6 +23,38 @@ header h1 {
   color: #f2f279;
 }
 
+.twitter-tweet.twitter-tweet-rendered {
+  margin: 0 auto;
+  transform: rotate(-0.1deg);
+}
+
+h4.faq {
+  width: calc(100% - 2em);
+  margin: 1em auto 0;
+  padding: .5em 0;
+  border-top: 2px #f29dba solid;
+  border-bottom: 2px #f29dba solid;
+  color: #f29dba;
+}
+
+summary.faq::before {
+  content: 'Q.';
+  font-size: 1.25em;
+  color: #e95864;
+  padding-right: .25em;
+}
+
+.summary_open.faq-a::before {
+  content: 'A.';
+  font-size: 1.25em;
+  color: #e95864;
+  padding-right: .25em;
+}
+
+.summary_open .list.link {
+  padding: .75em 0 0;
+}
+
 .detail {
   position: relative;
   border: solid 2px;
@@ -75,7 +107,6 @@ header h1 {
 .h4-ng {
   background-color: #e54552;
 }
-
 
 .list li {
   padding: .1em 0;
@@ -148,7 +179,7 @@ header h1 {
   width: 50vw;
 }
 
-.area_thumb a:hover {
+.area_thumb a:hover,.pagetop a:hover {
   opacity: .75;
 }
 
@@ -157,14 +188,43 @@ header h1 {
 }
 
 .contact-btn {
-  width: calc(100% - .5em);
+  width: calc(100% - 2em);
   margin: 0 auto;
+  padding: .5em 0;
   display: flex;
+  flex-direction: column;
+}
+
+.contact-btn .btn_group {
+  display: flex;
+  width: 100%;
+  padding: .5em 0;
+  box-sizing: border-box;
 }
 
 .contact-btn button.btn {
-  width: calc((100% / 3) - .5em);
-  margin: 1em .25em 0;
+  width: calc(100% - .5em);
+  margin: 0;
+}
+
+.contact-btn button.btn:hover p,button.btn:active p {
+  padding: calc(1em - 4px) 0;
+}
+
+.contact-btn .btn_group .btn_main {
+  width: 70%;
+  border-radius: 10px 0 0 10px;
+}
+
+.contact-btn .btn_group .btn_sub {
+  background-color: #f2f279;
+  color: #f29dba;
+  width: 30%;
+  border-radius: 0 10px 10px 0;
+}
+
+.contact-btn button.btn p {
+  padding: .75em 0;
 }
 
 .question {
@@ -197,10 +257,10 @@ footer p {
   }
 
   .area_half {
-  display: flex;
-  max-width: 1024px;
-  width: 100%;
-  margin: 0 auto;
+    display: flex;
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
   }
 
   .h3-about {
@@ -258,13 +318,23 @@ footer p {
   .area_thumb a img {
     width: auto;
   }
+
   .contact-btn {
     max-width: 960px;
     width: calc(100% - 2em);
+    flex-direction: row;
+  }
+
+  .contact-btn .btn_group {
+    padding: .5em 1em;
   }
   
   .contact-btn button.btn {
-    width: calc((100% / 3) - 1.5em);
-    margin: 1em auto 0;
+    width: calc(100% - 1.5em);
   }
+
+  .contact-btn button.btn p {
+    padding: 1em 0;
+  }
+  
 }
