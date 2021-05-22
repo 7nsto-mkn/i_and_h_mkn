@@ -26,6 +26,10 @@ header,h1 {
   padding: 1em;
 }
 
+header h1 {
+  font-size: 0;
+}
+
 header h1 img {
   width: 100%;
 }
@@ -77,6 +81,10 @@ p,ul,details {
   transform:rotate(0.1deg);
 }
 
+select,option {
+  transform:rotate(0.1deg);
+}
+
 a {
   color: #f29dba;
   outline: none;
@@ -88,8 +96,8 @@ a:hover,a:active {
 
 a.anchor{
   display: block;
-  padding-top: 2em;
-  margin-top: -2em;
+  padding-top: 1.5em;
+  margin-top: -1.5em;
 }
 
 img {
@@ -119,8 +127,9 @@ summary::-webkit-details-marker {
 
 summary::after {
   content: "\f067";
-  font-family: FontAwesome;
+  font-family: "Font Awesome 5 Free";
   font-size: 1.25em;
+  font-weight: 900;
   color: #f29dba;
   width: 10%;
   position: absolute;
@@ -222,8 +231,17 @@ footer a:hover {
   color: #f29dba
 }
 
+@media screen and (max-width: 559px) {
+  .pc {
+    display: none;
+  }
+}
+
 /* pc */
 @media screen and (min-width: 560px) {
+  .sp {
+    display: none!important;
+  }
   header,h1 {
     max-width: 1024px;
     width: 100%;

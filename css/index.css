@@ -61,7 +61,7 @@ summary.faq::before {
 }
 
 .ex {
-  background-color: #e6e6e6;
+  background-color: #f2f2f2;
   display: flex;
   margin-bottom: 1.5em;
 }
@@ -174,13 +174,30 @@ summary.faq::before {
   flex-wrap: wrap;
 }
 
-.area_thumb a {
-  width: 50vw;
+.area_thumb.column-3 a {
+  width: calc(100% / 3);
+}
+
+.area_thumb.column-2 a {
+  width: calc(100% / 2);
+  align-items: center;
+  display: flex;
 }
 
 .area_thumb a:hover,.pagetop a:hover {
   opacity: .75;
 }
+
+a.fk { background-color: #ac88d1; }
+a.sk { background-color: #e981b4; }
+a.nb { background-color: #5888e9; }
+a.dt { background-color: #e95864; }
+a.iw { background-color: #ffe45e; }
+a.ab { background-color: #64d188; }
+a.kj { background-color: #ffa273; }
+a.mg { background-color: #4c4c4c; }
+a.ru { background-color: #ccc; }
+a.archives {background-color: #f29dba; }
 
 .area_thumb a img {
   width: 100%;
@@ -320,26 +337,31 @@ footer p {
     background-position-x: center;
   }
 
-  .area_thumb a:first-of-type {
+  .area_thumb.column-3 a {
+    position: relative;
+  }
+
+  .area_thumb.column-3 a::before {
+    content: '';
+    padding-top: 100%;
+    display: block;
+    position: absolute;
+  }
+
+  .area_thumb a.all {
     background-image: url(../img/thumb_all_pc.png);
   }
 
-  .area_thumb a:first-of-type img {
+  .area_thumb a.all img {
     display: none;
   }
 
-  .area_thumb a:nth-of-type(2) { background-color: #ac88d1; }
-  .area_thumb a:nth-of-type(3) { background-color: #e981b4; }
-  .area_thumb a:nth-of-type(4) { background-color: #5888e9; }
-  .area_thumb a:nth-of-type(5) { background-color: #e95864; }
-  .area_thumb a:nth-of-type(6) { background-color: #ffe45e; }
-  .area_thumb a:nth-of-type(7) { background-color: #64d188; }
-  .area_thumb a:nth-of-type(8) { background-color: #ffa273; }
-  .area_thumb a:nth-of-type(9) { background-color: #4c4c4c; }
-  .area_thumb a:last-of-type { background-color: #ccc; }
-
   .area_thumb a img {
-    width: auto;
+    width: 100%;
+  }
+
+  .area_thumb.column-3 a img {
+    max-width: 250px;
   }
 
   .contact-btn {
