@@ -220,6 +220,8 @@ a.anchor{
   .sub-page_ttl.kj { background-color: #ffa273; }
   .sub-page_ttl.mg { background-color: #4c4c4c; }
   .sub-page_ttl.ru { background-color: #ccc; }
+  .sub-page_ttl.archives { background-color: #f29dba; }
+
 
   .sub-page_ttl img {
     margin: 0 auto;
