@@ -19,9 +19,7 @@
 
 	'use strict';
 
-	//
 	// Feature Test
-	//
 
 	var supports =
 		'querySelector' in document &&
@@ -29,10 +27,7 @@
 		'requestAnimationFrame' in window &&
 		'closest' in window.Element.prototype;
 
-
-	//
 	// Default settings
-	//
 
 	var defaults = {
 		// Selectors
@@ -50,10 +45,7 @@
 		after: function () {}
 	};
 
-
-	//
 	// Utility Methods
-	//
 
 	/**
 	 * Merge two or more objects. Returns a new object.
@@ -278,24 +270,16 @@
 		return false;
 	};
 
-
-	//
 	// SmoothScroll Constructor
-	//
 
 	var SmoothScroll = function (selector, options) {
 
-		//
 		// Variables
-		//
 
 		var smoothScroll = {}; // Object for public APIs
 		var settings, anchor, toggle, fixedHeader, headerHeight, eventTimeout, animationInterval;
 
-
-		//
 		// Methods
-		//
 
 		/**
 		 * Cancel a scroll-in-progress
@@ -396,7 +380,6 @@
 			// Start scrolling animation
 			smoothScroll.cancelScroll();
 			window.requestAnimationFrame(loopAnimateScroll);
-
 
 		};
 
@@ -555,17 +538,11 @@
 
 		};
 
-
-		//
 		// Initialize plugin
-		//
 
 		smoothScroll.init(options);
 
-
-		//
 		// Public APIs
-		//
 
 		return smoothScroll;
 
