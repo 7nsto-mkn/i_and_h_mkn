@@ -98,6 +98,15 @@ a.anchor{
   padding-right: .25em;
 }
 
+.area_item p.new::after {
+  display: none;
+}
+
+.area_item p.new img {
+  width: 3rem;
+  padding: 0 0 0 .5em;
+}
+
 .area_item img {
   padding: 0 8px 16px;
 }
@@ -136,6 +145,21 @@ a.anchor{
 
 .area_archives img:nth-child(3) {
   width: calc(72% - 2.5px);
+}
+
+.area_set {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.area_set img:nth-child(1) {
+  width: 27%;
+}
+
+.area_set img:nth-child(2) {
+  width: 73%;
 }
 
  .return {
@@ -248,7 +272,7 @@ a.anchor{
     padding: 0 0 .5em;
   }
 
-  .area_icon,.area_header {
+  .area_icon,.area_header,.area_set {
     max-width: 1024px;
     width: 100%;
     margin: 0 auto;
@@ -300,7 +324,7 @@ a.anchor{
   .area_archives img:nth-child(3) {
     width: 100%;
   }
-  
+
   .return {
     max-width: 1024px;
     width: 100%;
