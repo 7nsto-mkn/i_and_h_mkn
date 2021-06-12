@@ -92,7 +92,7 @@
 	 * Escape special characters for use with querySelector
 	 * @param {String} id The anchor ID to escape
 	 * @author Mathias Bynens
-	 * @link https://github.com/mathiasbynens/CSS.escape
+	 * @link //github.com/mathiasbynens/CSS.escape
 	 */
 	var escapeCharacters = function (id) {
 
@@ -169,7 +169,7 @@
 
 	/**
 	 * Calculate the easing pattern
-	 * @link https://gist.github.com/gre/1650294
+	 * @link //gist.github.com/gre/1650294
 	 * @param {String} type Easing pattern
 	 * @param {Number} time Time animation should take to complete
 	 * @returns {Number}
@@ -368,7 +368,7 @@
 
 			/**
 			 * Reset position to fix weird iOS bug
-			 * @link https://github.com/cferdinandi/smooth-scroll/issues/45
+			 * @link //github.com/cferdinandi/smooth-scroll/issues/45
 			 */
 			if (window.pageYOffset === 0) {
 				window.scrollTo( 0, 0 );
