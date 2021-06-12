@@ -28,7 +28,7 @@ nav .nav_inner {
 nav p {
   width: fit-content;
   padding: 0 1em 0 0;
-  font-weight: 900;
+  font-weight: 700;
   color: #fff;
   white-space: nowrap;
 }
@@ -40,7 +40,7 @@ nav form {
 }
 nav form::before {
   font-family: "Font Awesome 5 Free";
-  font-weight: 900;
+  font-weight: 700;
   content: "\f107";
   color:#f29dba;
   position: absolute;
@@ -72,7 +72,7 @@ a.anchor{
 }
 .area_item p::before {
   font-family: "Font Awesome 5 Free";
-  font-weight: 900;
+  font-weight: 700;
   content: "▼";
   color:#f29dba;
   padding-right: .25em;
