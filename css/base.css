@@ -57,7 +57,7 @@ h2::before {
 }
 h3 { font-size: 1.25em; }
 h4 { font-size: 1.25em; }
-p,ul,details {
+h3,h4,p,ul,details {
   padding: 1em 1em 0;
   transform:rotate(0.1deg);
 }
