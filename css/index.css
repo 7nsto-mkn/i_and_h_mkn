@@ -247,9 +247,12 @@ footer p {  padding: 1em;}
     display: block;
     position: absolute;
   }
-  .area_thumb a.all { background-image: url(../img/thumb_all_pc.png); }
-  .area_thumb a.all img { display: none; }
   .area_thumb a img { width: 100%; }
+  .area_thumb a.all img { display: none; }
+  .area_thumb a.archives img {
+    width: auto;
+    margin: 0 auto;
+  }
   .area_thumb.column-3 a img { max-width: 250px; }
   .contact-btn {
     max-width: 960px;
