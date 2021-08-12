@@ -121,6 +121,15 @@ summary.faq::before {
   font-size: .8em;
   line-height: 1.15em;;
 }
+#sozai dl {
+  max-width: 1024px;
+  width: calc(100% - 2em);
+  margin: 1em auto;
+  padding: 1em;
+  border: 2px #f29dba solid;
+  border-radius: 5px;
+}
+#sozai dl dt { color:#f29dba; }
 .area_thumb {
   width: 100vw;
   display: flex;
@@ -230,6 +239,12 @@ footer p {  padding: 1em;}
   }
   .def-ok,.def-ng { padding: 1em 0; }
   .group_ex { width: 50%; }
+  #sozai dl {
+    display: flex;
+    align-items: center;
+  }
+  #sozai dl dt { padding-right: 1em; }
+  
   .area_thumb {
     max-width: 1024px;
     width: 100%;

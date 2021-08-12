@@ -61,6 +61,9 @@ h3,h4,p,ul,details {
   padding: 1em 1em 0;
   transform:rotate(0.1deg);
 }
+dl dt,dl dd {
+  transform:rotate(0.1deg);
+}
 select,option { transform:rotate(0.1deg); }
 a {
   color: #f29dba;
