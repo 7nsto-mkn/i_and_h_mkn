@@ -117,6 +117,9 @@ a.anchor{
   bottom: 0;
   left: 0;
 }
+
+.area_calendar img { width: calc((100% - 8px) / 2); }
+
 .return a {
   background-image:url(../img/return.png);
   background-repeat: no-repeat;
@@ -209,6 +212,9 @@ a.anchor{
   }
   .area_archives img:nth-child(2) { width: 38%; }
   .area_archives img:nth-child(3) { width: 100%; }
+
+  .area_calendar { font-size: 0; }
+  .area_calendar img { width: calc((100% - 8px) / 4); }
 
   .return {
     max-width: 1024px;
