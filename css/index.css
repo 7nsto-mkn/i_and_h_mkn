@@ -150,7 +150,7 @@ summary.faq::before {
   align-items: center;
   display: flex;
 }
-.area_thumb a:hover,.pagetop a:hover { opacity: .75;}
+a.new_items:hover,.area_thumb a:hover,.pagetop a:hover { opacity: .75;}
 a.fk { background-color: #ac88d1; }
 a.sk { background-color: #e981b4; }
 a.nb { background-color: #5888e9; }
@@ -164,6 +164,11 @@ a.all {
   background-image: url(/i_and_h_mkn/img/thumb_all_bg.png);
   background-position: center center;
   background-size: cover;
+}
+a.new_items {
+  background-color: #f2f279;
+  display: block;
+  text-align: center;
 }
 a.archives {background-color: #f29dba; }
 .contact-btn {
@@ -194,7 +199,7 @@ a.archives {background-color: #f29dba; }
 .contact-btn .btn_group .btn_sub {
   background-color: #f2f279;
   color: #f29dba;
-  font-size: .75em;
+  font-size: .6em;
   width: 30%;
   border-radius: 0 10px 10px 0;
 }
@@ -279,6 +284,11 @@ footer p {  padding: 1em;}
     margin: 0 auto;
   }
   .area_thumb.column-3 a img { max-width: 250px; }
+  .area_single {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+  }
   .contact-btn {
     max-width: 960px;
     width: calc(100% - 2em);

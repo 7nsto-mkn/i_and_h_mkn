@@ -1,6 +1,7 @@
 @charset "utf-8";
 body { position: relative; }
-header, h1 { padding: 3.1em 1em 1em; }
+header, h1 { padding: 5.25em 1em 1em; }
+.newitems_pages, h1 { padding:1em; }
 header h1 {
   background-image: url(../img/logo_small.png);
   background-repeat: no-repeat;
@@ -9,7 +10,7 @@ header h1 {
   width: 100%;
   margin: 0 auto;
   padding: calc(64.5 / 345 * 100%) 0 0;
-  display: none;
+  display: block;
 }
 nav form, nav form select, nav form select option { width: 100%; }
 nav {
@@ -136,6 +137,7 @@ a.anchor{
   header h1 {
     background-image: url(../img/logo_small_pc.png);
   }
+  header, h1 { padding: 9em 2em 1em; }
   p {
     max-width: 1000px;
     padding: 1em 0;
@@ -170,7 +172,11 @@ a.anchor{
   .sub-page_ttl.mg { background-color: #4c4c4c; }
   .sub-page_ttl.ru { background-color: #ccc; }
   .sub-page_ttl.archives { background-color: #f29dba; }
-  .sub-page_ttl img { margin: 0 auto; }
+  .sub-page_ttl.newitems { background-color: #f2f279; }
+  .sub-page_ttl img {
+    width: calc(100% / 3);
+    margin: 0 auto;
+  }
   .head_bg { margin-bottom: 4em; }
   a.anchor{
     display: block;
