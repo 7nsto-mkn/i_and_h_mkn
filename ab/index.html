@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -17,7 +18,7 @@
   <script async src="//www.googletagmanager.com/gtag/js?id=UA-176742800-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
     gtag('config', 'UA-176742800-1');
@@ -26,7 +27,9 @@
 
 <body>
   <header id="logo">
-    <a href="../"><h1>Free Icon & Header (made by mikan)</h1></a>
+    <a href="../">
+      <h1>Free Icon & Header (made by mikan)</h1>
+    </a>
   </header>
   <nav>
     <div class="nav_inner">
@@ -34,7 +37,8 @@
       <form>
         <select name="menu">
           <option>こちらから選択してください</option>
-          <option value="#dbt2nd">Snow Manデビュー2周年記念 [New]</option>
+          <option value="#ift">Infighter [New]</option>
+          <option value="#dbt2nd">Snow Manデビュー2周年記念</option>
           <option value="#s1">Snow Mania S1</option>
           <option value="#hlhl">HELLO HELLO</option>
           <option value="#combi02">シンメ・コンビ ver.2</option>
@@ -54,8 +58,23 @@
     <div class="section">
 
       <div class="area_item">
+        <a id="ift" class="anchor"></a>
+        <p class="new">Infighter<img src="/i_and_h_mkn/img/new_title.png" alt="new"></p>
+        <div class="area_icon">
+          <img src="/i_and_h_mkn/img/icon/ab/ic_ab_ift01.png" alt="Infighter 阿部亮平 アイコン">
+          <img src="/i_and_h_mkn/img/icon/ab/ic_ab_ift02.png" alt="Infighter 阿部亮平 アイコン">
+          <img src="/i_and_h_mkn/img/icon/ab/ic_ab_ift03.png" alt="Infighter 阿部亮平 アイコン">
+        </div>
+        <div class="area_header">
+          <img src="/i_and_h_mkn/img/header/ab/hd_ab_ift01.png" alt="Infighter 阿部亮平 ヘッダー">
+          <img src="/i_and_h_mkn/img/header/ab/hd_ab_ift02.png" alt="Infighter 阿部亮平 ヘッダー">
+          <img src="/i_and_h_mkn/img/header/ab/hd_ab_ift03.png" alt="Infighter 阿部亮平 ヘッダー">
+        </div>
+      </div>
+
+      <div class="area_item">
         <a id="dbt2nd" class="anchor"></a>
-        <p class="new">Snow Manデビュー2周年記念<img src="/i_and_h_mkn/img/new_title.png" alt="new"></p>
+        <p class="new">Snow Manデビュー2周年記念</p>
         <div class="area_icon">
           <img src="/i_and_h_mkn/img/icon/ab/ic_ab_dbt2nd.png" alt="Snow Manデビュー2周年記念 阿部亮平 アイコン">
         </div>
@@ -230,74 +249,83 @@
         </div>
       </div>
 
-   </div>
+      <div class="btn_group">
+        <button class="btn btn_main" onclick="location.href='//icondecotter.jp/?p=7n_sto'" type="submit"
+          formtarget="_blank" rel="noopener noreferrer">
+          <p class="btn btn_text">iconDecotter</p>
+        </button>
+      </div>
 
-   <div class="block_page-bottom">
-    <div class="return"><a href="/i_and_h_mkn/index.html#sozai"></a></div>
-    <div class="pagetop"><a href="#logo"></a></div>
+    </div>
+
+
+    <div class="block_page-bottom">
+      <div class="return"><a href="/i_and_h_mkn/index.html#sozai"></a></div>
+      <div class="pagetop"><a href="#logo"></a></div>
+    </div>
+
   </div>
 
-</div>
-
-<!-- js -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<!-- fontawesome -->
-<script src="//kit.fontawesome.com/0949d9709e.js" crossorigin="anonymous"></script>
-<!-- smooth-scroll -->
-<script type="text/javascript" src="/i_and_h_mkn/js/smooth-scroll.js"></script>
-<script>
-var scroll = new SmoothScroll();
-var options = {};
-var smoothScrollWithoutHash = function (selector, settings) {
-    var clickHandler = function (event) {
-        var toggle = event.target.closest( selector );
-        if ( !toggle || toggle.tagName.toLowerCase() !== 'a' ) return;
-        var anchor = document.querySelector( toggle.hash );
-        if ( !anchor ) return;
+  <!-- js -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- fontawesome -->
+  <script src="//kit.fontawesome.com/0949d9709e.js" crossorigin="anonymous"></script>
+  <!-- smooth-scroll -->
+  <script type="text/javascript" src="/i_and_h_mkn/js/smooth-scroll.js"></script>
+  <script>
+    var scroll = new SmoothScroll();
+    var options = {};
+    var smoothScrollWithoutHash = function (selector, settings) {
+      var clickHandler = function (event) {
+        var toggle = event.target.closest(selector);
+        if (!toggle || toggle.tagName.toLowerCase() !== 'a') return;
+        var anchor = document.querySelector(toggle.hash);
+        if (!anchor) return;
         event.preventDefault();
-        scroll.animateScroll( anchor, toggle, options || {} );
+        scroll.animateScroll(anchor, toggle, options || {});
+      };
+      window.addEventListener('click', clickHandler, false);
     };
-    window.addEventListener('click', clickHandler, false );
-};
-  smoothScrollWithoutHash( 'a[href*="#"]' );
-</script>
-<!-- menu -->
-<script>
-  $(function () {
-  $('select').change(function () {
-    var speed = 1000;
-    var href = $(this).val();
-    var target = $(href == "#" || href == "" ? 'html' : href);
-    var position = target.offset().top;
-    $('body,html').animate({scrollTop:position}, speed, 'swing');
-    return false;
-  });
-});
-</script>
-<!-- top-btn -->
-<script>
-  $(document).ready(function () {
-    $(".pagetop").hide();　//ボタンを非表示にする
-    $(window).on("scroll", function () {
-        if ($(this).scrollTop() > 300) { //ページの上から何pxスクロールした時
-            $(".pagetop").fadeIn("fast"); //ボタンがフェードインする
-        } else {
-            $(".pagetop").fadeOut("fast");　//ボタンがフェードアウトする
-        }
-      scrollHeight = $(document).height(); //ドキュメントの高さ 
-      scrollPosition = $(window).height() + $(window).scrollTop(); //現在地 
-      footHeight = $("footer").innerHeight(); //止めたい位置の高さ(今回はfooter)
-      if (scrollHeight - scrollPosition <= footHeight) { //ドキュメントの高さと現在地の差がfooterの高さ以下の時
-          $(".pagetop").css({
-              "position": "absolute", //pisitionをabsoluteに変更
-          });
-      } else { //それ以外の場合は
-          $(".pagetop").css({
-              "position": "fixed", //固定表示
-          });
-      }
+    smoothScrollWithoutHash('a[href*="#"]');
+  </script>
+  <!-- menu -->
+  <script>
+    $(function () {
+      $('select').change(function () {
+        var speed = 1000;
+        var href = $(this).val();
+        var target = $(href == "#" || href == "" ? 'html' : href);
+        var position = target.offset().top;
+        $('body,html').animate({ scrollTop: position }, speed, 'swing');
+        return false;
+      });
     });
-  });
-</script>
+  </script>
+  <!-- top-btn -->
+  <script>
+    $(document).ready(function () {
+      $(".pagetop").hide();　//ボタンを非表示にする
+      $(window).on("scroll", function () {
+        if ($(this).scrollTop() > 300) { //ページの上から何pxスクロールした時
+          $(".pagetop").fadeIn("fast"); //ボタンがフェードインする
+        } else {
+          $(".pagetop").fadeOut("fast");　//ボタンがフェードアウトする
+        }
+        scrollHeight = $(document).height(); //ドキュメントの高さ 
+        scrollPosition = $(window).height() + $(window).scrollTop(); //現在地 
+        footHeight = $("footer").innerHeight(); //止めたい位置の高さ(今回はfooter)
+        if (scrollHeight - scrollPosition <= footHeight) { //ドキュメントの高さと現在地の差がfooterの高さ以下の時
+          $(".pagetop").css({
+            "position": "absolute", //pisitionをabsoluteに変更
+          });
+        } else { //それ以外の場合は
+          $(".pagetop").css({
+            "position": "fixed", //固定表示
+          });
+        }
+      });
+    });
+  </script>
 </body>
+
 </html>

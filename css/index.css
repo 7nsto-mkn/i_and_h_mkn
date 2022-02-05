@@ -221,16 +221,19 @@ a.archives {background-color: #f29dba; }
   padding: .5em 0;
   text-align: center;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
 }
 .share p {
-  width: 50%;;
-  padding: .5em 1.5em .5em 0;
+  width: auto;
+  margin: 0;
+  padding: .5em .5em .5em 0;
   color: #fff;
   text-align: right;
 }
 .twitter_btn {
-  width: 50%;
+  width: auto;
   text-align: left;
 }
 .twitter-share-button[data-text], .twitter-share-button[data-url] { white-space: pre-wrap;}
@@ -297,4 +300,7 @@ footer p {  padding: 1em;}
   .contact-btn .btn_group { padding: .5em 1em; }
   .contact-btn button.btn { width: calc(100% - 1.5em); }
   .contact-btn button.btn p { padding: 1em 0; }
+  .twitter_btn {
+    padding-right: 1.5em;
+  }
 }
