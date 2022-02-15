@@ -63,12 +63,12 @@ a.anchor{
   padding-bottom: 1em;
 }
 .area_item {
-  background-color: #f2f2f2;
   margin-bottom: 1em;
-  padding: 1em .5em 0;
+  padding: 1.25em .5em;
+  border-bottom: #f29dba dashed 1px;
 }
 .area_item p {
-  padding: 0 .5em .5em;
+  padding: 0 .5em .75em;
   text-align: center;
 }
 .area_item p::before {
@@ -84,6 +84,7 @@ a.anchor{
   padding: 0 0 0 .5em;
 }
 .area_item img { padding: 0 8px 16px; }
+.area_item .img_hidden { display: none; }
 .area_icon {
   font-size: 0;
   display: flex;
