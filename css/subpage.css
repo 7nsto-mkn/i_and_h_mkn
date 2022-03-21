@@ -84,13 +84,17 @@ a.anchor{
   padding: 0 0 0 .5em;
 }
 .area_item img { padding: 0 8px 16px; }
-.area_item .img_hidden { display: none; }
+.area_item .img_hidden,.area_item .link_hidden { display: none; }
 .area_icon {
   font-size: 0;
   display: flex;
   flex-wrap: wrap;
 }
-.area_icon img, .area_icon .new, .area_item .area_icon img {
+.area_icon a img, .area_icon .new, .area_item .area_icon a img {
+  width: 100%;
+}
+.area_icon img, .area_icon .new, .area_item .area_icon img,
+.area_icon a, .area_icon .new, .area_item .area_icon a {
   width: calc(100% / 3);
   align-self: flex-start;
 }
@@ -101,9 +105,9 @@ a.anchor{
   flex-wrap: wrap;
   align-items: center;
 }
-.area_archives img:nth-child(1) { width: 100%; }
-.area_archives img:nth-child(2) { width: calc(28% - 2.5px); }
-.area_archives img:nth-child(3) { width: calc(72% - 2.5px); }
+.area_archives img:nth-child(1), .area_archives a:nth-child(1) { width: 100%; }
+.area_archives img:nth-child(2), .area_archives a:nth-child(2) { width: calc(28% - 2.5px); }
+.area_archives img:nth-child(3), .area_archives a:nth-child(3) { width: calc(72% - 2.5px); }
 .area_set {
   display: flex;
   flex-wrap: wrap;
@@ -194,12 +198,21 @@ a.anchor{
     width: 100%;
     margin: 0 auto;
   }
-  .area_icon img, .area_icon .new, .area_item .area_icon img { width: calc(100% / 6); }
+  .area_icon img, .area_icon .new, .area_item .area_icon img,
+  .area_icon a, .area_icon .new, .area_item .area_icon a {
+    width: calc(100% / 6);
+  }
   .area_header {
     display: flex;
     flex-wrap: wrap;
   }
-  .area_header .new, .area_header img { width: calc(100% / 2); }
+  .area_header .new, .area_header a img {
+    width: 100%;
+  }
+  .area_header .new, .area_header img,
+  .area_header .new, .area_header a {
+    width: calc(100% / 2);
+  }
   .area_header .new img { width: 100%; }
   .area_archives, .area_archives_icon {
     max-width: 1000px;
@@ -213,12 +226,20 @@ a.anchor{
     max-width: 400px;
     width: 100%;
   }
-  .area_archives img:nth-child(1) {
+
+  .area_archives img a {
+    width: 100%;
+  }
+  .area_archives a:nth-child(1) {
     max-width: 62%;
     width: 100%;
   }
-  .area_archives img:nth-child(2) { width: 38%; }
-  .area_archives img:nth-child(3) { width: 100%; }
+  .area_archives a:nth-child(2) {
+    width: 38%;
+  }
+  .area_archives a:nth-child(3) {
+    width: 100%;
+  }
 
   .area_calendar { font-size: 0; }
   .area_calendar img { width: calc((100% - 8px) / 4); }
