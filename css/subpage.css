@@ -137,7 +137,133 @@ a.anchor{
 }
 .pc { display: none; }
 
-/* pc */
+/* event */
+.event-content {
+  background: linear-gradient(to right, #fafac9, #f5d0d0);
+}
+.event-content_in {
+  max-width: calc(768px - 2em);
+  width: calc(100% - 2em);
+  margin: auto;
+}
+.event-header {
+  width: 100%;
+  margin: 0 auto 1em;
+  padding-top: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.event-header img:first-of-type {
+  width: calc(75% - .5em);
+}
+.event-header img:last-of-type {
+  width: calc(25% - .5em);
+  filter: drop-shadow(5px 5px 5px rgba(255,255,255,.5));
+}
+.event-content p {
+  width: 100%;
+  padding: 0 0 1em;
+}
+.event-content .section {
+  background-color: #fff;
+  border-radius: 10px;
+  width: 100%;
+  margin: 1em auto 2em;
+  padding: 1em;
+}
+.event-content .section .attention {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5em 0;
+}
+.event-content .section .attention::before {
+  content: '';
+  background-color: rgba(242,157,186,.5);
+  border-radius: 1px;
+  width: 75%;
+  height: 2px;
+  margin: 0 auto;
+  display: block;
+}
+.event-content .section .attention.ng {
+  padding-top: 1em;
+}
+.event-content .section .attention dt {
+  font-size: 1.25em;
+  width: 100%;
+  text-align: center;
+}
+.event-content .section .attention.ok dt {
+  color: #457ae6;
+}
+.event-content .section .attention.ng dt {
+  color: #e95864;
+}
+.event-content .section .attention dd {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+.event-content .section .attention dd::before {
+  font-family: "Font Awesome 5 Free";
+  padding-right: .25em;
+}
+.event-content .section .attention.ok dd::before {
+  content: '\f111';
+  color: #457ae6;
+  font-weight: 500;
+  display: block;
+}
+.event-content .section .attention.ng dd::before {
+  content: '\f00d';
+  color: #e95864;
+  font-weight: 700;
+  display: block;
+}
+.event-content .section .area_item {
+  margin-bottom: 0;
+  padding: 0;
+  border-bottom: none;
+}
+.event-content .section .area_item .items {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.event-content .section .area_item .items a,
+.event-content .section .area_item .items a img {
+  display: block;
+  padding: 0;
+}
+.event-content .section .area_item .items a {
+  border-radius: 10px;
+  height: 0;
+  margin-bottom: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.event-content .section .area_item .items.wp-02 a {
+  width: calc(50% - 5px);
+  padding-top: calc(50% - 10px);
+}
+.event-content .section .area_item .items.wp-04 a {
+  width: calc((100% - 30px) / 4);
+  padding-top: calc((100% - 30px) / 4);
+}
+.event-content .section .area_item .items a img {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+/* ---pc--- */
 @media screen and (min-width: 560px) {
   header h1 {
     background-image: url(../img/logo_small_pc.png);

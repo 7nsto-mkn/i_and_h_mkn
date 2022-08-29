@@ -150,7 +150,22 @@ summary.faq::before {
   align-items: center;
   display: flex;
 }
-a.new_items:hover,.area_thumb a:hover,.pagetop a:hover { opacity: .75;}
+a.event {
+  background: linear-gradient(to right, #fafac9, #f5d0d0);
+  border-radius: 10px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  max-width: calc(1024px - 2em);
+  width: calc(100% - 2em);
+  margin: 2em auto 0;
+  padding-top: 1em;
+}
+a.event img {
+  max-width: calc(768px - 2em);
+  width: calc(100% - 2em);
+}
+a.new_items:hover,a.event:hover,.area_thumb a:hover,.pagetop a:hover { opacity: .75;}
 a.fk { background-color: #ac88d1; }
 a.sk { background-color: #e981b4; }
 a.nb { background-color: #5888e9; }
