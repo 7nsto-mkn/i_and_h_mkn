@@ -3,7 +3,7 @@ body { position: relative; }
 header, h1 { padding: 5.25em 1em 1em; }
 .newitems_pages, h1 { padding:1em; }
 header h1 {
-  background-image: url(../i_and_h_mkn/img/logo_small.png);
+  background-image: url(/i_and_h_mkn/img/logo_small.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 100%;
@@ -127,7 +127,7 @@ a.anchor{
 .area_calendar img { width: calc((100% - 8px) / 2); }
 
 .return a {
-  background-image:url(../i_and_h_mkn/img/return.png);
+  background-image:url(/i_and_h_mkn/img/return.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -266,7 +266,7 @@ a.anchor{
 /* ---pc--- */
 @media screen and (min-width: 560px) {
   header h1 {
-    background-image: url(../i_and_h_mkn/img/logo_small_pc.png);
+    background-image: url(/i_and_h_mkn/img/logo_small_pc.png);
   }
   header, h1 { padding: 9em 2em 1em; }
   p {
