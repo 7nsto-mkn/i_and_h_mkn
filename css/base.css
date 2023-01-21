@@ -42,7 +42,7 @@ h2::before {
   content: '';
   width: 1em;
   height: 1em;
-  background-image: url(../img/item.png);
+  background-image: url(../i_and_h_mkn/img/item.png);
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
@@ -136,7 +136,7 @@ details[open] summary::after { transform: translateY(-50%) rotate(45deg); }
   content: '';
   width: 3rem;
   height: 3rem;
-  background-image: url(../img/new.png);
+  background-image: url(../i_and_h_mkn/img/new.png);
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
@@ -168,7 +168,7 @@ button {
   z-index: 1;
 }
 .pagetop a {
-  background-image:url(../img/pagetop.png);
+  background-image:url(../i_and_h_mkn/img/pagetop.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;

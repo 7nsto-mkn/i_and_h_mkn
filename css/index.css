@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 header h1 {
-  background-image: url(../img/logo.png);
+  background-image: url(../i_and_h_mkn/img/logo.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 100%;
@@ -260,7 +260,7 @@ a.ru {
 }
 
 a.all {
-  background-image: url(/img/thumb_all_bg.png);
+  background-image: url(/i_and_h_mkn/img/thumb_all_bg.png);
   background-position: center center;
   background-size: cover;
 }
@@ -370,7 +370,7 @@ footer p {
 /* pc */
 @media screen and (min-width: 560px) {
   header h1 {
-    background-image: url(../img/logo_pc.png);
+    background-image: url(../i_and_h_mkn/img/logo_pc.png);
   }
 
   .area_half {
