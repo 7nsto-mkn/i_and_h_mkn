@@ -116,7 +116,6 @@ details[open] summary::after { transform: translateY(-50%) rotate(45deg); }
 .detail {
   width: calc(100% - 2em);
   margin: 0 auto;
-  padding: .5em 0 1em;
 }
 .img-center {
   margin: 0 auto;

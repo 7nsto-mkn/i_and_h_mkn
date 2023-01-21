@@ -58,7 +58,15 @@ summary.faq::before {
 .detail {
   position: relative;
   border: solid 2px;
-  margin-top: 1.5em;
+}
+
+.wrapper .section details .summary_open.faq-a h5 {
+  font-weight: bold;
+  padding-top: .5em;
+}
+
+.wrapper .section details .summary_open.faq-a p {
+  padding: .5em 0;
 }
 
 .ex {
@@ -77,94 +85,65 @@ summary.faq::before {
   align-self: center;
 }
 
-.detail.ok {
-  border-color: #457ae6;
+.detail.check {
+  border-color: #50a87c;
+  line-height: 1.25;
+  margin-top: 1em;
 }
 
-.detail.ng {
-  border-color: #e54552;
+.list-check {
+  padding: 1em 1em;
 }
 
-.h3-ok {
+.list-check dt {
+  padding: .75em 0 .25em;
+}
+
+.list-check dd::before {
+  content: '\f00c';
+  font-family: "Font Awesome 5 Free";
+  font-size: 16px;
+  font-weight: 900;
+  padding-right: .25em;
+}
+
+.list-check dd:first-of-type::before, .list-check .check_attention li::before {
+  color: #50a87c;
+}
+
+.list-check dt.ok, .list-check .ok::before {
   color: #457ae6;
 }
 
-.h3-ng {
+.list-check dt.ng, .list-check .ng::before {
   color: #e54552;
 }
 
-.h3-ok,
-.h3-ng {
-  position: absolute;
-  display: inline-block;
-  top: -.5em;
-  left: calc((100vw - 5em) / 2);
-  padding: 0 1em;
-  line-height: 1;
-  background: #fff;
+.list-check .check_attention::before {
+  content: '';
+  display: none;
 }
 
-.h4-ok,
-.h4-ng {
-  color: #fff;
-  flex-wrap: wrap;
-  margin: 0 auto;
-  padding: .25em .5em;
+.list-check .check_attention ul {
+  padding: 0 0 0 .5em;
 }
 
-.h4-ok {
-  background-color: #457ae6;
-}
-
-.h4-ng {
-  background-color: #e54552;
-}
-
-.list li {
-  padding: .1em 0;
+.list-check .check_attention li::before {
+  content: '\f0a4';
+  font-family: "Font Awesome 5 Free";
+  font-size: 16px;
+  font-weight: 900;
+  padding-right: .25em;
 }
 
 .list.link {
   padding-top: .5em;
 }
 
-.list.attention::before {
-  content: '※';
-  font-size: .5em;
-  padding-right: .5em;
-}
-
-.list.def-ok li i,
-.list.def-ng li i {
-  font-size: .75em;
-  padding-right: .5em;
-}
-
-.list.def-ok li i {
-  color: #457ae6;
-}
-
-.list.def-ng li i {
-  color: #e54552;
-}
-
 .list.link li i {
   color: #f29dba;
   font-size: 1em;
   padding-right: .25em;
-}
-
-.list.ng li i {
-  color: #e54552;
-  font-size: .5em;
-  padding-right: .5em;
-}
-
-.list.ng li:last-child::before {
-  content: '※';
-  color: #333;
-  font-size: 1em;
-  padding-right: 0;
 }
 
 .ex_ttl {
@@ -281,7 +260,7 @@ a.ru {
 }
 
 a.all {
-  background-image: url(/i_and_h_mkn/img/thumb_all_bg.png);
+  background-image: url(/img/thumb_all_bg.png);
   background-position: center center;
   background-size: cover;
 }
