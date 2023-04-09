@@ -101,7 +101,7 @@ summary.faq::before {
 
 .list-check dd::before {
   content: '\f00c';
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 6 Free";
   font-size: 16px;
   font-weight: 900;
   padding-right: .25em;
@@ -130,7 +130,7 @@ summary.faq::before {
 
 .list-check .check_attention li::before {
   content: '\f0a4';
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 6 Free";
   font-size: 16px;
   font-weight: 900;
   padding-right: .25em;
@@ -196,6 +196,10 @@ summary.faq::before {
   width: calc(100% / 2);
   align-items: center;
   display: flex;
+}
+
+.area_thumb.column-2 a div {
+  width: 100%;
 }
 
 .special_area {
@@ -281,6 +285,7 @@ a.archives {
   padding: .5em 0;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .contact-btn .btn_group {
@@ -288,6 +293,13 @@ a.archives {
   width: 100%;
   padding: .5em 0;
   box-sizing: border-box;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-btn .btn_group p {
+  padding: 0.5em 0;
+  text-align: center;
 }
 
 .contact-btn button.btn {
@@ -300,19 +312,24 @@ button.btn:active p {
   padding: calc(1em - 4px) 0;
 }
 
-.contact-btn .btn_group .btn_main {
-  width: 70%;
-  height: 4em;
-  border-radius: 10px 0 0 10px;
+.contact-btn button.btn p i,
+.contact-btn button.btn:hover p i {
+  padding: 0 .25em
 }
 
-.contact-btn .btn_group .btn_sub {
+.contact-btn .btn_group .btn_main {
+  width: 100%;
+  height: 4em;
+  border-radius: 10px;
+}
+
+/*.contact-btn .btn_group .btn_sub {
   background-color: #f2f279;
   color: #f29dba;
   font-size: .6em;
   width: 30%;
   border-radius: 0 10px 10px 0;
-}
+}*/
 
 .contact-btn button.btn p {
   padding: .75em 0;
@@ -463,6 +480,7 @@ footer p {
   }
 
   .contact-btn .btn_group {
+    width: 50%;
     padding: .5em 1em;
   }
 

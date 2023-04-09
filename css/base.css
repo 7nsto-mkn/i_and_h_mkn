@@ -94,7 +94,7 @@ summary {
 summary::-webkit-details-marker { display: none; }
 summary::after {
   content: "\f067";
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 6 Free";
   font-size: 1.25em;
   font-weight: 700;
   color: #f29dba;
