@@ -93,20 +93,26 @@ summary {
 }
 summary::-webkit-details-marker { display: none; }
 summary::after {
-  content: "\f067";
-  font-family: "Font Awesome 6 Free";
-  font-size: 1.25em;
+  content: "Open";
+  font-size: 10px;
   font-weight: 700;
-  color: #f29dba;
+  background-color: #f29dba;
+  border-radius: 5px;
+  color: #fff;
   width: 10%;
+  padding: 10px 5px;
   position: absolute;
   top: 50%;
-  right: -10%;
+  right: -9%;
   transform: translateY(-50%);
   transition: transform 0.5s;
   text-align: center;
+  display: flex;
+  justify-content: center;
 }
-details[open] summary::after { transform: translateY(-50%) rotate(45deg); }
+details[open] summary::after {
+  content: "Close";
+}
 .summary_open {
   background-color: #fff;
   border: 2px #f2f279 solid;
