@@ -231,7 +231,7 @@ footer a:hover {
   }
   button:hover .btn_text,
   button:active .btn_text{
-    padding: calc(1em - 4px) 0;
+    padding: calc(1em - 2px) 0;
   }
   details {
     margin: 1em auto 0;
