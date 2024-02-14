@@ -367,8 +367,12 @@ a.anchor{
     width: 100%;
   }
 
-  .area_calendar { font-size: 0; }
-  .area_calendar img { width: calc((100% - 8px) / 4); }
+  .area_calendar {
+    font-size: 0;
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+  .area_calendar img {width: calc((100% - 8px) / 4); }
 
   .return {
     max-width: 1024px;
