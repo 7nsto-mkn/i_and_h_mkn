@@ -70,19 +70,28 @@ a.anchor{
 .area_item p {
   padding: 0 .5em .75em;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0 .5em;
 }
 .area_item p::before {
   font-family: "Font Awesome 5 Free";
   font-weight: 700;
   content: "▼";
   color:#f29dba;
-  padding-right: .25em;
 }
-.area_item p.new::after { display: none; }
-.area_item p.new img {
-  width: 3rem;
-  padding: 0 0 0 .5em;
+.area_item p.new_icon::after {
+  content:'';
+  background-image: url(/i_and_h_mkn/img/new_title.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
 }
+.area_item p.new_icon img { width: 100%; }
 .area_item img { padding: 0 8px 16px; }
 .area_item .img_hidden,.area_item .link_hidden { display: none; }
 .area_icon {
