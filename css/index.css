@@ -206,8 +206,9 @@ summary.faq::before {
   max-width: 1024px;
   width: 100%;
   margin: 0 auto;
-  padding: 1em;
+  padding: 2em 1em 0;
   display: flex;
+  flex-wrap: wrap;
   gap: 1em;
 }
 
@@ -230,35 +231,27 @@ a.event:hover,
 a.fk {
   background-color: #ac88d1;
 }
-
 a.sk {
   background-color: #e981b4;
 }
-
 a.nb {
   background-color: #5888e9;
 }
-
 a.dt {
   background-color: #e95864;
 }
-
 a.iw {
   background-color: #ffe45e;
 }
-
 a.ab {
   background-color: #64d188;
 }
-
 a.kj {
   background-color: #ffa273;
 }
-
 a.mg {
   background-color: #4c4c4c;
 }
-
 a.ru {
   background-color: #ccc;
 }
@@ -384,6 +377,7 @@ footer p {
   padding: 1em;
 }
 
+
 /* pc */
 @media screen and (min-width: 560px) {
   header h1 {
@@ -412,23 +406,18 @@ footer p {
     padding: 0 1em;
   }
 
-  .def-ok,
-  .def-ng {
-    padding: 1em 0;
-  }
+  .def-ok, .def-ng { padding: 1em 0; }
 
-  .group_ex {
-    width: 50%;
-  }
+  .group_ex { width: 50%; }
+
+  a.event { width: calc(50% - 8px); }
 
   #sozai dl {
     display: flex;
     align-items: center;
   }
 
-  #sozai dl dt {
-    padding-right: 1em;
-  }
+  #sozai dl dt { padding-right: 1em; }
 
   .area_thumb {
     max-width: 1024px;
