@@ -410,7 +410,7 @@ footer p {
 
   .group_ex { width: 50%; }
 
-  a.event { width: calc(50% - 8px); }
+  a.event { width: 100%; }
 
   #sozai dl {
     display: flex;
